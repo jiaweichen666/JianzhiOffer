@@ -27,7 +27,7 @@ public void testSwap() throws Exception {
 //TODO: Test goes here...
     Solution solution = new Solution();
     int[] nums = {1,4,2,3,8,9,5,7,6};
-    solution.fastSort(nums,0,nums.length - 1 );
+    solution.binarySort(nums);
     System.out.println(Arrays.toString(nums));
 } 
 

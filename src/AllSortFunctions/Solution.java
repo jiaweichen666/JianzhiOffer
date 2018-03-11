@@ -84,4 +84,37 @@ public class Solution {
         if (high > start)
             fastSort(nums,start + 1,high);
     }
+    public void binarySort(int[] nums){
+        binarySortHelper(nums,0,nums.length - 1);
+    }
+    public void merge(int[] nums,int low ,int mid ,int high){
+        int i = low;
+        int j = mid + 1;
+        if (low >= high){
+            return;
+        }
+        int[] tmp = new int[nums.length];
+        for (int k = 0; k < nums.length; k++) {
+            tmp[k] = nums[k];
+        }
+        for (int k = low; k <= high ; k++) {
+            if (i > mid)
+                nums[k] = tmp[j++];
+            else if (j > high)
+                nums[k] = tmp[i++];
+            else if (tmp[i] < tmp[j])
+                nums[k] = tmp[i++];
+            else
+                nums[k] = tmp[j++];
+
+        }
+      }
+    public void binarySortHelper(int[] nums,int low,int high){
+        if (high <= low)
+            return;
+        int mid = low + (high - low)/2;
+        binarySortHelper(nums,low,mid);
+        binarySortHelper(nums,mid + 1,high);
+        merge(nums,low,mid,high);
+    }
 }
