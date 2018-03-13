@@ -11,7 +11,7 @@ public class Main {
             listNodes[i].next = listNodes[i + 1];
         }
         ListNode head = listNodes[0];
-        ListNode reversedListHead = solution.reverseList(head);
+        ListNode reversedListHead = solution.reverseList_recursive(head);
         ListNode p = reversedListHead;
         while(p != null){
             System.out.println(p.val);
