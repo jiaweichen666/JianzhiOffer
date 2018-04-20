@@ -7,7 +7,7 @@ package p50_01FirstNotRepeatingChar;
  */
 public class Main {
     public static void main(String[] args) {
-        String s = "abaccdeff";
+        String s = "adaccbeff";
         System.out.println(firtNotRepeatedChar(s));
     }
     public static char firtNotRepeatedChar(String s){
@@ -17,7 +17,7 @@ public class Main {
         for (int i = 0; i < chars.length; i++) {
             hashMap[chars[i]]++;
         }
-        for (int i = 0; i < chars.length ; i++) {
+        for (int i = 0; i < chars.length ; i++) {//注意第二次扫描时还是根据chars的顺序扫
             if (hashMap[chars[i]] == 1) {
                 firtchar = chars[i];
                 break;
