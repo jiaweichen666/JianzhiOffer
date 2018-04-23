@@ -3,7 +3,7 @@ package AllSortFunctions;
 import java.util.Arrays;
 
 /**
- * Description：归并过程线排左半段，一直划分到两个单值比较，然后merge，然后排右边半段，最后merge
+ * Description：归并过程线排左半段，一直划分到两个单值比较，然后merge，然后排右边半段，最后merge2ws
  */
 public class BinarySort {
     public static void main(String[] args) {
