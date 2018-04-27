@@ -7,7 +7,7 @@ public class Main2 {
     private static final String line = "cat cat cattie cat";
     private static final String line2 = "chenchenchenchen";
     public static void main(String[] args) {
-        Pattern pattern = Pattern.compile("\\bcat\\b");
+        Pattern pattern = Pattern.compile("\\s+");//compile("\\bcat\\b");
         Matcher matcher = pattern.matcher(line);
         while (matcher.find()){
             System.out.println("Start: "+matcher.start());
