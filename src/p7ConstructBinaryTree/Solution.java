@@ -1,7 +1,7 @@
 package p7ConstructBinaryTree;
 
 public class Solution {
-    public TreeNode reConstruct(int[] pre,int[] in){//不知道有个什么bug。。。。。
+    public TreeNode reConstruct(int[] pre,int[] in){
         if (pre == null || in ==null )
             return null;
         return helper(pre,in,0,pre.length - 1,0,in.length - 1);
@@ -13,11 +13,9 @@ public class Solution {
             return root;
         }
         int rootIndex  = 0;
-        for (int i = 0; i < inend; i++) {
-            if (root.val == in[i]){
-                rootIndex = i;
+        for (rootIndex = instart; rootIndex < inend; rootIndex++) {
+            if (pre[prestart] == in[rootIndex])
                 break;
-            }
         }
         int leftsize = rootIndex - instart;
         int rightsize = inend - rootIndex;
@@ -30,8 +28,10 @@ public class Solution {
         return root;
     }
     public void preOrderTravesal(TreeNode root){
-        if (root != null)
-            System.out.println(root.val+ " ");
+        if (root == null){
+            return;
+        }
+        System.out.print(root.val + " ");
         preOrderTravesal(root.left);
         preOrderTravesal(root.right);
     }
