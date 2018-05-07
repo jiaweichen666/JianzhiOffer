@@ -18,7 +18,7 @@ public class Solution {
 
     }
     public boolean isOdd(int n){
-        if ((n & 0x1)== 0)
+        if ((n & 0x1) != 0)
             return true;
         return false;
     }
