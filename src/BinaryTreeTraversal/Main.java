@@ -15,9 +15,14 @@ public class Main {
         Solution solution = new Solution();
         System.out.println("IN");
         solution.InorderWithoutRecursion(treeNodes[0]);
+        System.out.println();
         System.out.println("Pre");
         solution.PreorderWithoutRecursion(treeNodes[0]);
+        System.out.println();
         System.out.println("Post");
         solution.PostOrderWithoutRecursion(treeNodes[0]);
+        System.out.println();
+        System.out.println("PostNewCoderWay");
+        solution.PostOrderBinaryTreeTraversalUnrecursivelyByNewCoder(treeNodes[0]);
     }
 }
