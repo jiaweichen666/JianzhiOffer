@@ -1,4 +1,4 @@
-package MaxValueOfGifts;
+package p47MaxValueOfGifts;
 /**
  *Created By Intellij IDEA
  * Author:chen

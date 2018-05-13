@@ -75,7 +75,7 @@ public class Solution {
                 end--;
             nums[start] = nums[end];
             while(start < end && nums[start] <= pivot)
-                start++;`
+                start++;
             nums[end] = nums[start];
         }
         nums[start] = pivot;

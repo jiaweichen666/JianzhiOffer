@@ -7,7 +7,7 @@ import java.util.Arrays;
  */
 public class BinarySort {
     public static void main(String[] args) {
-        int[] nums = {7,6,5,4};
+        int[] nums = {7,6,5,4,8,9,10};
         BinarySort(nums);
         System.out.println(Arrays.toString(nums));
 

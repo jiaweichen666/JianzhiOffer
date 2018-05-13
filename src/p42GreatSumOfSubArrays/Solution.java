@@ -23,7 +23,7 @@ public class Solution {
         for (int i = 0; i < nums.length; i++) {
             if (i == 0){
                 greatSumOfIndexI[i] = nums[i];
-            }else if (greatSumOfIndexI[i - 1] < 0){
+            }else if (greatSumOfIndexI[i - 1] <= 0){
                 greatSumOfIndexI[i] = nums[i];
             }else if (greatSumOfIndexI[i - 1] > 0){
                 greatSumOfIndexI[i] = greatSumOfIndexI[i - 1] + nums[i];

@@ -1,6 +1,6 @@
 package p7ConstructBinaryTree;
 
-public class Solution {
+public class Solution {//由先序遍历和中序遍历的结果重构二叉树
     public TreeNode reConstruct(int[] pre,int[] in){
         if (pre == null || in ==null )
             return null;

@@ -14,7 +14,7 @@ public class MyQueue {
             System.out.println("Delete Success! "+stack2.pop());
         }else {
             while(!stack1.empty()){
-                stack2.push(stack1.pop());
+                stack2.push(stack1.pop());//注意点1：一下全部导入
             }
             System.out.println("Delete Success! "+stack2.pop());
         }

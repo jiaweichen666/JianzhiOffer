@@ -1,4 +1,4 @@
-package TranslateNumbersToStrings;
+package p46TranslateNumbersToStrings;
 /**
  *Created By Intellij IDEA
  * Author:chen
@@ -33,7 +33,7 @@ public class BetterSolution {
     }
 
     public static void main(String[] args) {
-        int num = 1225840140;
+        int num = 12258;
         System.out.println(getTranslation(num));
     }
 }

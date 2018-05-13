@@ -15,9 +15,8 @@ public class Solution {
                     p = p.left;
                 }
                 if (!stack.empty()) {
-                    TreeNode tmp = stack.pop();
-                    System.out.println(tmp.val);
-                    p = tmp;
+                    p = stack.pop();
+                    System.out.println(p.val);
                     p = p.right;
                 }
             }
