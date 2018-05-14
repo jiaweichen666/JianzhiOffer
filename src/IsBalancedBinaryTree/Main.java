@@ -4,6 +4,7 @@ package IsBalancedBinaryTree;
  * Author:chen
  * Time:2-18/4/27/9:36
  * Description:判断一棵树是否是平衡二叉树，在后续遍历树的过程中，设置一个Boolean变量，若某子树不平衡，则设为false
+ * 后序遍历二叉树，在求depth的过程中判断是否存在不为AVL树的子树，若存在则全局变量isBalanced被设为False
  */
 public class Main {
     private static boolean isBalanced = true;
@@ -13,11 +14,11 @@ public class Main {
             treeNodes[i] = new TreeNode(i+1);
         }
         treeNodes[0].left = treeNodes[1];
-        //treeNodes[0].right = treeNodes[2];
+        treeNodes[0].right = treeNodes[2];
         treeNodes[1].left = treeNodes[3];
         treeNodes[1].right = treeNodes[4];
-        //treeNodes[2].left = treeNodes[5];
-        //treeNodes[2].right = treeNodes[6];
+        treeNodes[2].left = treeNodes[5];
+        treeNodes[2].right = treeNodes[6];
         int depth = getDepth(treeNodes[0]);
         System.out.println("TreeDepth: "+ depth + " IsBalancedTree? " + isBalanced);
     }

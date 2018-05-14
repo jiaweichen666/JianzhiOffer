@@ -6,7 +6,8 @@ import java.util.List;
 /**
  * Author:chen
  * Time:2017/4/25/14:30
- * Description:判断一棵树是不是满二叉树，找到第一个叶节点，其后的所有层次遍历的节点应该都是叶节点，若是，则是满二叉树
+ * Description:1.满二叉树的定义
+ * 判断一棵树是不是满二叉树，找到第一个叶节点，其后的所有层次遍历的节点应该都是叶节点，若是，则是满二叉树
  */
 public class IsFullBinaryTree {
     public static void main(String[] args) {
