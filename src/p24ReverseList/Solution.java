@@ -21,8 +21,8 @@ public class Solution {
             return head;
         }
         else {
-            ListNode newHead = reverseList(head.next);
-            head.next.next = head;
+            ListNode newHead = reverseList_recursive(head.next);//递归找到最后一个节点作为newHead
+            head.next.next = head;//head节点的下一节点的next指针指向head，相当于逆序。
             head.next = null;
             return newHead;
         }
