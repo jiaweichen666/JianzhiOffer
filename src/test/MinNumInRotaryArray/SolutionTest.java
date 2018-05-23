@@ -1,6 +1,6 @@
 package test.MinNumInRotaryArray; 
 
-import MinNumInRotaryArray.Solution;
+import p11MinNumInRotaryArray.Solution;
 import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After;
