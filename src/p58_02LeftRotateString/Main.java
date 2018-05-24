@@ -9,7 +9,6 @@ public class Main {
     public static void main(String[] args) {
         String s = "abcdefg";
         System.out.println(leftRotate(s,1));
-
     }
     public static String ReverseString(String s,int start,int end){
         char[] chars = s.toCharArray();

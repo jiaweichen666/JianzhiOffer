@@ -1,5 +1,7 @@
 package p57_02ContinuousSquenceWithSum;
 
+import java.util.ArrayList;
+
 /**
  * Author:chen
  * Time:2018/4/27/11:32
@@ -11,13 +13,14 @@ public class Main {
     }
     public static void findAllContinuousString(int sum){
         int start = 1;
+        ArrayList list = new ArrayList();
         int end = 2;
         int nowSum = start + end;
         int mid = (1 + sum) / 2;//small最大就是mid - 1，若为偶数8则最大为3，若为奇数9则最大为4，若为偶数10则最大为4
         while (start < mid){
             if (nowSum == sum) {
                 printSequence(start, end);
-                end++;//打印出一对后继续向后搜索
+                end++;//打印出一对后继续向后搜索，这一步很重要。。。不要忘记了
                 nowSum = nowSum + end;
             }
             else if (nowSum > sum){

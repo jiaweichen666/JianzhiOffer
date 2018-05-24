@@ -11,7 +11,7 @@ public class Main {
             listNodes[i].next = listNodes[i + 1];
         }
         listNodes[5].next = listNodes[2];
-        ListNode startNode = solution.entryNodeofList(listNodes[0]);
+        ListNode startNode = solution.EntryNodeOfLoop(listNodes[0]);
         System.out.println(startNode.val);
     }
 }
