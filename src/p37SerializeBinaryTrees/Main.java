@@ -16,7 +16,6 @@ public class Main {
         System.out.println(s);
         TreeNode root = DeSerializeTree(s);
         PreOrderTravesal(root);
-
     }
     public static String SerializeTree(TreeNode root){
         StringBuffer stringBuffer = new StringBuffer();

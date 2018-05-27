@@ -1,6 +1,6 @@
-package StringPathInMatirx;
+package p12StringPathInMatirx;
 
-public class Solution {
+public class    Solution {
     public boolean havePath(char[][] matrix, String string) {
         if (matrix == null || string == null)
             return false;

@@ -1,6 +1,6 @@
 package test.StringPathInMatirx; 
 
-import StringPathInMatirx.Solution;
+import p12StringPathInMatirx.Solution;
 import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After; 
