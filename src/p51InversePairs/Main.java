@@ -15,7 +15,7 @@ public class Main {
         int i = mid;
         int j = end;
         int count = 0;
-        int[] tmp = Arrays.copyOf(nums,nums.length);
+            int[] tmp = Arrays.copyOf(nums,nums.length);
         for (int k = end; k >= start ; k--) {
             if (i < start)
                 nums[k] = tmp[j--];

@@ -16,7 +16,8 @@ public class Main {
         treeNodes[1].right = treeNodes[4];
         treeNodes[2].left = treeNodes[5];
         treeNodes[2].right = treeNodes[6];
-        TreeNode head = new Solution().convertTree(treeNodes[0]);
+        RecursiveSolution solution= new RecursiveSolution();
+        TreeNode head = solution.Convert(treeNodes[0]);
         TreeNode node = head;
         while (node.right != null) {
             System.out.println(node.val);
